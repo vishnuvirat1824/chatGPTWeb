@@ -38,7 +38,7 @@ git clone https://github.com/yourusername/chatfusion.git
 cd chatfusion
 
 
- Add your Gemini API key
+### 2.Add your Gemini API key
 In ChatServlet.java, replace the placeholder:
 
 java
@@ -46,7 +46,7 @@ private static final String API_KEY = "YOUR_GEMINI_API_KEY";
 
 ➡️ Tip: For production, load the API key from environment variables or a secure config file.
 
-3. Compile and Deploy
+### 3. Compile and Deploy
 Deploy the app on a servlet container like Apache Tomcat or Jetty.
 
 Folder structure:
@@ -55,7 +55,7 @@ Folder structure:
    └── web.xml
 /ChatServlet.java
 /index.html
-4. Run
+### 4. Run
 Access the app in your browser:
 
 bash
@@ -68,8 +68,6 @@ Model: gemini-1.5-flash-latest
 Endpoint: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent
 📋 Example Request Payload
 json
-Copy
-Edit
 {
   "contents": [
     {
